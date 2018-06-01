@@ -1,0 +1,3108 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+body {
+  margin: 0; }
+
+h1 {
+  font-size: 2em; }
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+a {
+  background-color: transparent; }
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+b,
+strong {
+  font-weight: bolder; }
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+img {
+  border-style: none; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+progress {
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+details {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+@font-face {
+  font-family: BebasNeueBold;
+  /* Имя шрифта */
+  src: url(../fonts/BebasNeueBold.ttf);
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: BebasNeueRegular;
+  /* Имя шрифта */
+  src: url(../fonts/BebasNeueRegular.ttf);
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: RoadRadio;
+  /* Имя шрифта */
+  src: url(../fonts/RoadRadio.ttf);
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: RoadRadio-Bold;
+  /* Имя шрифта */
+  src: url(../fonts/RoadRadio-Bold.ttf);
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: RoadRadio-Light;
+  /* Имя шрифта */
+  src: url(../fonts/RoadRadio-Light.ttf);
+  /* Путь к файлу со шрифтом */ }
+
+@media (min-width: 900px) and (max-width: 1299px) {
+  .bgVideo {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 21, 21, 0.65);
+    position: relative;
+    overflow: hidden; }
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-background-size: cover;
+    background-size: cover; }
+  .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5px; }
+    .container__button {
+      width: 20%;
+      margin-right: 5px; }
+  .header {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1); }
+  .logo {
+    width: 25%;
+    padding-left: 5px; }
+    .logo__title {
+      font-family: BebasNeueBold, sans-serif;
+      font-size: 52px;
+      color: #ff511d;
+      letter-spacing: 3px; }
+    .logo__subtitle {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 17px;
+      color: rgba(255, 255, 255, 0.8); }
+  .nav {
+    width: 55%;
+    padding: 0 1%; }
+    .nav__links {
+      text-decoration: none;
+      font-family: BebasNeueRegular, sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 20px;
+      display: inline-block;
+      padding-top: 24px;
+      margin-right: 15px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .nav__links:hover {
+      color: #ff511d; }
+    .nav__links:active {
+      color: #ffffff; }
+  .button {
+    display: block;
+    background-color: #ff511d;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-family: RoadRadio-Bold, sans-serif;
+    letter-spacing: 2px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-transform: lowercase;
+    width: 150px;
+    height: 25px;
+    padding-top: 5px;
+    font-size: .9em;
+    overflow: hidden; }
+    .button__header {
+      position: relative;
+      top: 20px;
+      left: 0;
+      width: 180px;
+      height: 30px;
+      padding-top: 8px; }
+  .button:hover {
+    color: #000;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .button:active {
+    background-color: #ffffff; }
+  .title {
+    font-family: BebasNeueRegular, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 72px;
+    text-align: center; }
+    .title__bgVideo {
+      margin-top: 15%;
+      margin-bottom: 50px; }
+  .subtitle {
+    font-family: BebasNeueRegular, sans-serif;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    line-height: 30px;
+    width: 60%;
+    margin: 0 auto; }
+  .subtitleCenter {
+    font-family: RoadRadio-Light, sans-serif;
+    text-align: center;
+    color: #ff511d;
+    font-size: 24px;
+    padding: 10px 0 30px; }
+  .button-lg {
+    display: block;
+    background-color: #ff511d;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-family: RoadRadio-Bold, sans-serif;
+    letter-spacing: 2px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-transform: lowercase;
+    width: 200px;
+    height: 50px;
+    font-size: 1.4em;
+    padding-top: 14px; }
+    .button-lg__bgVideo {
+      margin: 50px auto; }
+  .button-lg:hover {
+    color: #000; }
+  .button-lg:active {
+    background-color: #ffffff; }
+  .infoContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 100%; }
+  .info {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-bottom: 70px; }
+    .info__title {
+      color: #1e1e1e;
+      padding-top: 50px; }
+  .infoLeftBlock {
+    width: 50%;
+    padding: 0 20px; }
+    .infoLeftBlock__title {
+      font-family: BebasNeueBold, sans-serif;
+      font-size: 28px;
+      color: #1e1e1e;
+      text-align: left;
+      line-height: 30px;
+      border-left: 3px solid #ff511d;
+      padding-left: 10px; }
+    .infoLeftBlock__paragraph {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 22px;
+      color: #a0a0a0;
+      padding-top: 10px;
+      line-height: 30px;
+      border-left: 3px solid #ff511d;
+      padding-left: 10px; }
+    .infoLeftBlock__instaButton {
+      display: block;
+      width: 200px;
+      height: 32px;
+      border: 1px solid #f2f2f2;
+      text-decoration: none;
+      color: #000;
+      padding: 7px 0 0 20px;
+      font-family: RoadRadio-Light, sans-serif;
+      position: relative;
+      top: 20px;
+      -webkit-box-shadow: 0 5px 10px #acacac;
+              box-shadow: 0 5px 10px #acacac;
+      background-color: #ffffff;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      letter-spacing: 1px; }
+    .infoLeftBlock__instaButton::after {
+      display: block;
+      content: '';
+      width: 28px;
+      height: 28px;
+      background-image: url("../img/insta-button.jpg");
+      position: absolute;
+      top: 1px;
+      right: 10px; }
+    .infoLeftBlock__instaButton:hover {
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      color: #ff511d; }
+  .infoRightBlock {
+    width: 50%;
+    height: auto; }
+  .bg-wrap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+    background: url("../img/test.png") no-repeat; }
+  .services {
+    width: 100%;
+    -webkit-box-shadow: 0 0 10px #7a7a7a;
+            box-shadow: 0 0 10px #7a7a7a; }
+    .services__title {
+      color: #1e1e1e;
+      padding-top: 50px; }
+  .servicesContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 100%;
+    padding: 20px 0 120px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .serviceBlock {
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0 5px 10px #acacac;
+            box-shadow: 0 5px 10px #acacac; }
+    .serviceBlock_hover:hover .serviceBlock__button_hover {
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      left: 85px;
+      z-index: 1; }
+    .serviceBlock__img {
+      width: 290px;
+      height: 200px;
+      -webkit-background-size: cover;
+              background-size: cover;
+      position: relative;
+      overflow: hidden; }
+      .serviceBlock__img_personalTraining {
+        background-image: url("../img/services/personal-training.jpg"); }
+      .serviceBlock__img_groupTraining {
+        background-image: url("../img/services/group-training.jpg"); }
+      .serviceBlock__img_kidsTraining {
+        background-image: url("../img/services/kids-boxing.jpg"); }
+    .serviceBlock__serviceName {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 24px;
+      color: #1e1e1e;
+      text-align: center;
+      padding: 5px;
+      background-color: rgba(255, 255, 255, 0.5); }
+  .shadowHover {
+    width: 100%;
+    height: 200px;
+    margin-top: -200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    padding: 1px; }
+    .shadowHover__button {
+      margin: 150px auto; }
+  .serviceBlock__img_personalTraining:hover .shadowHover {
+    margin-top: 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .serviceBlock__img_groupTraining:hover .shadowHover {
+    margin-top: 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .serviceBlock__img_kidsTraining:hover .shadowHover {
+    margin-top: 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .timetable {
+    width: 100%;
+    height: 700px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .timetable__leftSide {
+      width: 25%;
+      background-color: #e7e7e7;
+      z-index: -1; }
+    .timetable__middleSide {
+      width: 40%;
+      background-color: rgba(242, 242, 242, 0.43);
+      position: relative;
+      z-index: -1; }
+    .timetable__rightSide {
+      width: 35%; }
+  .timetableContainer {
+    position: relative;
+    top: 100px;
+    left: -600px;
+    width: 900px;
+    height: 500px;
+    background-image: url("../img/timetable-bg1.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    -webkit-box-shadow: 0 20px 60px 1px #9c9c9c;
+            box-shadow: 0 20px 60px 1px #9c9c9c; }
+    .timetableContainer__title {
+      color: #1e1e1e;
+      padding-top: 20px; }
+    .timetableContainer__personal-training {
+      padding-top: 20px;
+      text-align: center;
+      color: #ff511d;
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 20px; }
+  .sportSections {
+    width: 100%;
+    padding: 20px 70px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .sportSection {
+    width: 27%;
+    border: 1px solid #adadad;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background-color: #eeeeee; }
+    .sportSection__img {
+      display: block;
+      width: 90px;
+      margin: 20px auto; }
+    .sportSection__link {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      font-family: BebasNeueRegular, sans-serif;
+      color: #ff511d;
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 40px;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s; }
+  .sportSection_focusFirst:hover, .sportSection_focusSecond:hover, .sportSection_focusThird:hover, .sportSection_focusFourth:hover {
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black;
+    z-index: 1;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .sportSection_focusFirst:hover .sportSection__link, .sportSection_focusSecond:hover .sportSection__link, .sportSection_focusThird:hover .sportSection__link, .sportSection_focusFourth:hover .sportSection__link {
+    text-shadow: 0 0 5px #ff511d;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .timetableNewPage {
+    width: 100%;
+    height: 100%;
+    background-color: #222; }
+    .timetableNewPage-black {
+      color: #dfdfdf;
+      padding-top: 100px; }
+  .timetableSection {
+    background-image: url("../img/timetable-bg1.png");
+    width: 850px;
+    height: 500px;
+    margin: 50px auto 100px;
+    padding: 50px;
+    -webkit-box-shadow: 0 20px 60px 1px #6e6d6d;
+            box-shadow: 0 20px 60px 1px #6e6d6d;
+    position: relative; }
+    .timetableSection__days {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 32px;
+      color: #ff511d;
+      text-align: center;
+      padding: 10px; }
+    .timetableSection__times {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 28px;
+      color: #000;
+      text-align: center; }
+    .timetableSection__links {
+      color: #222;
+      font-size: 22px;
+      font-family: BebasNeueRegular, sans-serif; }
+      .timetableSection__links-pdf {
+        position: absolute;
+        left: 20px;
+        bottom: 20px; }
+      .timetableSection__links-excel {
+        position: absolute;
+        right: 20px;
+        bottom: 20px; }
+    .timetableSection__links:hover {
+      color: #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+  .timetableSubtitle {
+    text-align: center;
+    color: #000;
+    font-family: BebasNeueRegular, sans-serif;
+    font-size: 52px;
+    margin-bottom: 50px; }
+    .timetableSubtitle-comment {
+      font-size: 36px;
+      margin-top: -30px; }
+  .coaches {
+    width: 100%;
+    -webkit-box-shadow: 0 -1px 10px #7a7a7a;
+            box-shadow: 0 -1px 10px #7a7a7a;
+    padding-bottom: 50px; }
+    .coaches__title {
+      color: #1e1e1e;
+      padding-top: 50px; }
+  .coachesContainer {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 5px; }
+  .coachesBox {
+    width: 33.33%; }
+    .coachesBox__photo {
+      width: 250px;
+      height: 250px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      margin: 0 auto;
+      border: 3px solid #a0a0a0; }
+    .coachesBox__name {
+      font-family: RoadRadio-Bold, sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 24px;
+      margin: 20px 0;
+      text-align: center;
+      background-color: #ff511d;
+      -webkit-box-shadow: 0 0 5px #ff511d;
+              box-shadow: 0 0 5px #ff511d;
+      padding: 4px; }
+    .coachesBox__info {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 24px;
+      color: #7a7a7a;
+      line-height: 30px;
+      text-align: center;
+      padding: 5px;
+      min-height: 70px;
+      overflow: hidden; }
+  .vladimir {
+    background: url(../img/coaches/Vladimir.jpg) 25px -20px;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .nastya {
+    background: url(../img/coaches/Nastya.jpg)-10px 0;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .alexandr {
+    background: url(../img/coaches/Alexandr.jpg);
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .denis {
+    background: url(../img/coaches/Denis.jpg) 0 -20px;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .sergei {
+    background: url(../img/coaches/sergei.jpg);
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .form {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/form-bg1.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    padding: 1px 0 20px; }
+  .formContainer {
+    width: 100%;
+    margin: -20px auto 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .formLeftSide {
+    width: 50%;
+    margin-top: 367px; }
+    .formLeftSide__title {
+      font-family: BebasNeueBold, sans-serif;
+      color: #ff511d;
+      font-size: 52px;
+      margin-top: 15px;
+      text-align: right;
+      padding: 5px; }
+    .formLeftSide__paragraph {
+      font-family: BebasNeueBold, sans-serif;
+      color: #ff511d;
+      font-size: 28px;
+      margin-top: 50px;
+      line-height: 35px;
+      text-align: right;
+      font-style: italic; }
+  .formRightSide {
+    width: 50%;
+    margin-top: 350px; }
+  .formSend {
+    margin: 15px 0 0 50px; }
+    .formSend__input {
+      border: none;
+      border-bottom: 2px solid #ff511d;
+      background-color: transparent;
+      width: 400px;
+      height: 60px;
+      margin-top: 10px;
+      color: #ff511d;
+      font-family: BebasNeueBold, sans-serif;
+      font-size: 28px;
+      outline: none; }
+    .formSend__input::-webkit-input-placeholder {
+      color: #ff511d; }
+    .formSend__input::-moz-placeholder {
+      color: #ff511d; }
+    .formSend__input:-ms-input-placeholder {
+      color: #ff511d; }
+    .formSend__input::-ms-input-placeholder {
+      color: #ff511d; }
+    .formSend__input::placeholder {
+      color: #ff511d; }
+    .formSend__button {
+      width: 400px;
+      height: 60px;
+      margin-top: 50px;
+      background-color: transparent;
+      font-family: RoadRadio-Bold, sans-serif;
+      font-size: 24px;
+      color: #ff511d;
+      border: 2px solid #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .formSend__button:hover {
+      color: #000;
+      background-color: #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+  .contacts {
+    width: 100%;
+    padding: 1px; }
+    .contacts__title {
+      color: #1e1e1e;
+      margin-top: 50px; }
+  .contactsContainer {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 10px; }
+  .containerInner {
+    width: 300px; }
+    .containerInner__icon {
+      color: #ff511d;
+      position: relative;
+      left: 42%; }
+      .containerInner__icon_right {
+        margin-left: 7px; }
+    .containerInner__title {
+      font-family: BebasNeueRegular, sans-serif;
+      color: #1e1e1e;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 32px; }
+    .containerInner__text {
+      font-family: BebasNeueRegular, sans-serif;
+      color: #1e1e1e;
+      text-align: center;
+      font-size: 26px; }
+  .footer {
+    width: 100%;
+    background-color: #222222; }
+  .footerContainer {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 50px 0; }
+  .footerLogo__title {
+    font-family: BebasNeueBold, sans-serif;
+    font-size: 50px;
+    line-height: 38px;
+    display: block; }
+    .footerLogo__title_colorFirst {
+      color: #ffffff; }
+    .footerLogo__title_colorSecond {
+      color: #7a7a7a; }
+    .footerLogo__title_colorThird {
+      color: #ff511d; }
+    .footerLogo__title_colorFourth {
+      color: #ffffff; }
+  .footerNav__links {
+    text-decoration: none;
+    display: block;
+    font-family: BebasNeueRegular, sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .footerNav__links:hover {
+    color: #ff511d;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .footerNav__links:active {
+    color: #ffffff; }
+  .footerContacts__numbers {
+    font-family: BebasNeueRegular, sans-serif;
+    color: #ffffff;
+    font-size: 32px; }
+  .footerContacts__instaButton {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ffffff;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 7px;
+    font-family: BebasNeueRegular, sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .footerContacts__instaButton:hover {
+    background-color: #ff511d;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  #scroller {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+    background-color: #e7e7e7;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    text-align: center;
+    color: #000;
+    -webkit-box-shadow: 0 2px 5px #1e1e1e;
+            box-shadow: 0 2px 5px #1e1e1e; } }
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .bgVideo {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 21, 21, 0.65);
+    position: relative;
+    overflow: hidden; }
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-background-size: cover;
+    background-size: cover; }
+  .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5px; }
+    .container__button {
+      display: none;
+      width: 20%;
+      margin-right: 5px; }
+  .header {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1); }
+  .logo {
+    width: 100%;
+    padding-left: 5px;
+    text-align: center; }
+    .logo__title {
+      font-family: BebasNeueBold, sans-serif;
+      font-size: 52px;
+      color: #ff511d;
+      letter-spacing: 3px; }
+    .logo__subtitle {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 17px;
+      color: rgba(255, 255, 255, 0.8); }
+  .nav {
+    width: 100%;
+    text-align: center; }
+    .nav__links {
+      text-decoration: none;
+      font-family: BebasNeueRegular, sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 20px;
+      display: inline-block;
+      padding-top: 24px;
+      margin-right: 15px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .nav__links:hover {
+      color: #ff511d; }
+    .nav__links:active {
+      color: #ffffff; }
+  .button {
+    display: block;
+    background-color: #ff511d;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-family: RoadRadio-Bold, sans-serif;
+    letter-spacing: 2px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-transform: lowercase;
+    width: 150px;
+    height: 25px;
+    padding-top: 5px;
+    font-size: .9em;
+    overflow: hidden; }
+    .button__header {
+      position: relative;
+      top: 20px;
+      left: 0;
+      width: 180px;
+      height: 30px;
+      padding-top: 8px; }
+  .button:hover {
+    color: #000;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .button:active {
+    background-color: #ffffff; }
+  .title {
+    font-family: BebasNeueRegular, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 72px;
+    text-align: center; }
+    .title__bgVideo {
+      margin-top: 45%;
+      margin-bottom: 50px; }
+  .subtitle {
+    font-family: BebasNeueRegular, sans-serif;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    line-height: 30px;
+    width: 80%;
+    margin: 0 auto; }
+  .subtitleCenter {
+    font-family: RoadRadio-Light, sans-serif;
+    text-align: center;
+    color: #ff511d;
+    font-size: 24px;
+    padding: 10px 0 30px; }
+  .button-lg {
+    display: block;
+    background-color: #ff511d;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-family: RoadRadio-Bold, sans-serif;
+    letter-spacing: 2px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-transform: lowercase;
+    width: 200px;
+    height: 50px;
+    font-size: 1.4em;
+    padding-top: 14px; }
+    .button-lg__bgVideo {
+      margin: 50px auto; }
+  .button-lg:hover {
+    color: #000; }
+  .button-lg:active {
+    background-color: #ffffff; }
+  .infoContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; }
+  .info {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-bottom: 70px; }
+    .info__title {
+      color: #1e1e1e;
+      padding-top: 50px; }
+  .infoLeftBlock {
+    width: 100%;
+    padding: 0 20px; }
+    .infoLeftBlock__title {
+      font-family: BebasNeueBold, sans-serif;
+      font-size: 28px;
+      color: #1e1e1e;
+      text-align: left;
+      line-height: 30px;
+      border-left: 3px solid #ff511d;
+      padding-left: 10px; }
+    .infoLeftBlock__paragraph {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 22px;
+      color: #a0a0a0;
+      padding-top: 10px;
+      line-height: 30px;
+      border-left: 3px solid #ff511d;
+      padding-left: 10px; }
+    .infoLeftBlock__instaButton {
+      display: block;
+      width: 200px;
+      height: 32px;
+      border: 1px solid #f2f2f2;
+      text-decoration: none;
+      color: #000;
+      padding: 7px 0 0 20px;
+      font-family: RoadRadio-Light, sans-serif;
+      position: relative;
+      top: 50px;
+      -webkit-box-shadow: 0 5px 10px #acacac;
+              box-shadow: 0 5px 10px #acacac;
+      background-color: #ffffff;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      letter-spacing: 1px; }
+    .infoLeftBlock__instaButton::after {
+      display: block;
+      content: '';
+      width: 28px;
+      height: 28px;
+      background-image: url("../img/insta-button.jpg");
+      position: absolute;
+      top: 1px;
+      right: 10px; }
+    .infoLeftBlock__instaButton:hover {
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      color: #ff511d; }
+  .infoRightBlock {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 50px; }
+  .bg-wrap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+    background: url("../img/test.png") no-repeat; }
+  .services {
+    width: 100%;
+    -webkit-box-shadow: 0 0 10px #7a7a7a;
+            box-shadow: 0 0 10px #7a7a7a; }
+    .services__title {
+      color: #1e1e1e;
+      padding-top: 50px; }
+  .servicesContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 20px 0 120px; }
+  .serviceBlock {
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0 5px 10px #acacac;
+            box-shadow: 0 5px 10px #acacac;
+    width: 60%;
+    margin: 0 auto; }
+    .serviceBlock_hover:hover .serviceBlock__button_hover {
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      left: 85px;
+      z-index: 1; }
+    .serviceBlock__img {
+      width: 100%;
+      height: 200px;
+      -webkit-background-size: cover;
+              background-size: cover;
+      position: relative;
+      overflow: hidden; }
+      .serviceBlock__img_personalTraining {
+        background-image: url("../img/services/personal-training.jpg"); }
+      .serviceBlock__img_groupTraining {
+        background-image: url("../img/services/group-training.jpg"); }
+      .serviceBlock__img_kidsTraining {
+        background-image: url("../img/services/kids-boxing.jpg"); }
+    .serviceBlock__serviceName {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 24px;
+      color: #1e1e1e;
+      text-align: center;
+      padding: 5px;
+      background-color: rgba(255, 255, 255, 0.5); }
+  .shadowHover {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    padding: 1px; }
+    .shadowHover__button {
+      margin: 150px auto; }
+  .timetable {
+    width: 100%;
+    height: 700px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .timetable__leftSide {
+      width: 25%;
+      background-color: #e7e7e7;
+      z-index: -1; }
+    .timetable__middleSide {
+      width: 40%;
+      background-color: rgba(242, 242, 242, 0.43);
+      position: relative;
+      z-index: -1; }
+    .timetable__rightSide {
+      width: 35%; }
+  .timetableContainer {
+    position: relative;
+    top: 100px;
+    left: -360px;
+    width: 550px;
+    height: 540px;
+    background-image: url("../img/timetable-bg1.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    -webkit-box-shadow: 0 20px 60px 1px #9c9c9c;
+            box-shadow: 0 20px 60px 1px #9c9c9c; }
+    .timetableContainer__title {
+      color: #1e1e1e;
+      padding-top: 20px; }
+    .timetableContainer__personal-training {
+      padding-top: 20px;
+      text-align: center;
+      color: #ff511d;
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 20px; }
+  .sportSections {
+    width: 100%;
+    padding: 20px 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .sportSection {
+    width: 25%;
+    border: 1px solid #adadad;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background-color: #eeeeee; }
+    .sportSection__img {
+      display: block;
+      width: 90px;
+      margin: 20px auto; }
+    .sportSection__link {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      font-family: BebasNeueRegular, sans-serif;
+      color: #ff511d;
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 40px;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s; }
+  .sportSection_focusFirst:hover, .sportSection_focusSecond:hover, .sportSection_focusThird:hover, .sportSection_focusFourth:hover {
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black;
+    z-index: 1;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .sportSection_focusFirst:hover .sportSection__link, .sportSection_focusSecond:hover .sportSection__link, .sportSection_focusThird:hover .sportSection__link, .sportSection_focusFourth:hover .sportSection__link {
+    text-shadow: 0 0 5px #ff511d;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .timetableNewPage {
+    width: 100%;
+    height: 100%;
+    background-color: #222; }
+    .timetableNewPage-black {
+      color: #dfdfdf;
+      padding-top: 170px; }
+  .timetableSection {
+    background-image: url("../img/timetable-bg1.png");
+    width: 95%;
+    height: 500px;
+    margin: 50px auto 100px;
+    padding: 50px;
+    -webkit-box-shadow: 0 20px 60px 1px #6e6d6d;
+            box-shadow: 0 20px 60px 1px #6e6d6d;
+    position: relative; }
+    .timetableSection__days {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 32px;
+      color: #ff511d;
+      text-align: center;
+      padding: 10px; }
+    .timetableSection__times {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 28px;
+      color: #000;
+      text-align: center; }
+    .timetableSection__links {
+      color: #222;
+      font-size: 22px;
+      font-family: BebasNeueRegular, sans-serif;
+      outline: none; }
+      .timetableSection__links-pdf {
+        position: absolute;
+        left: 20px;
+        bottom: 20px; }
+      .timetableSection__links-excel {
+        position: absolute;
+        right: 20px;
+        bottom: 20px; }
+    .timetableSection__links:hover {
+      color: #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+  .timetableSubtitle {
+    text-align: center;
+    color: #000;
+    font-family: BebasNeueRegular, sans-serif;
+    font-size: 52px;
+    margin-bottom: 50px; }
+    .timetableSubtitle-comment {
+      font-size: 36px;
+      margin-top: -30px; }
+  .coaches {
+    width: 100%;
+    -webkit-box-shadow: 0 -1px 10px #7a7a7a;
+            box-shadow: 0 -1px 10px #7a7a7a;
+    padding-bottom: 50px; }
+    .coaches__title {
+      color: #1e1e1e;
+      padding-top: 50px; }
+  .coachesContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 5px; }
+  .coachesBox__photo {
+    width: 250px;
+    height: 250px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin: 0 auto;
+    border: 3px solid #a0a0a0; }
+  .coachesBox__name {
+    width: 60%;
+    margin: 20px auto;
+    font-family: RoadRadio-Bold, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    text-align: center;
+    background-color: #ff511d;
+    -webkit-box-shadow: 0 0 5px #ff511d;
+            box-shadow: 0 0 5px #ff511d;
+    padding: 4px; }
+  .coachesBox__info {
+    width: 60%;
+    margin: 0 auto;
+    font-family: BebasNeueRegular, sans-serif;
+    font-size: 24px;
+    color: #7a7a7a;
+    line-height: 30px;
+    text-align: center;
+    padding: 5px;
+    min-height: 70px;
+    overflow: hidden; }
+  .vladimir {
+    background: url(../img/coaches/Vladimir.jpg) 25px -20px;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .nastya {
+    background: url(../img/coaches/Nastya.jpg)-10px 0;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .alexandr {
+    background: url(../img/coaches/Alexandr.jpg);
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .denis {
+    background: url(../img/coaches/Denis.jpg) 0 -20px;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .sergei {
+    background: url(../img/coaches/sergei.jpg);
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .form {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/form-bg1.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    padding: 1px; }
+  .formContainer {
+    width: 100%;
+    margin: 20px auto 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .formLeftSide {
+    width: 100%;
+    margin-top: 20px; }
+    .formLeftSide__title {
+      font-family: BebasNeueBold, sans-serif;
+      color: #ff511d;
+      font-size: 52px;
+      margin-top: 15px;
+      text-align: center;
+      padding: 5px; }
+    .formLeftSide__paragraph {
+      font-family: BebasNeueBold, sans-serif;
+      color: #ff511d;
+      font-size: 28px;
+      margin-top: 50px;
+      line-height: 35px;
+      text-align: center;
+      font-style: italic;
+      padding: 10px; }
+  .formRightSide {
+    width: 100%; }
+  .formSend {
+    width: 400px;
+    margin: 50px auto; }
+    .formSend__input {
+      border: none;
+      border-bottom: 2px solid #ff511d;
+      background-color: transparent;
+      width: 400px;
+      height: 60px;
+      margin-top: 10px;
+      color: #ff511d;
+      font-family: BebasNeueBold, sans-serif;
+      font-size: 28px;
+      outline: none; }
+    .formSend__input::-webkit-input-placeholder {
+      color: #ff511d; }
+    .formSend__input::-moz-placeholder {
+      color: #ff511d; }
+    .formSend__input:-ms-input-placeholder {
+      color: #ff511d; }
+    .formSend__input::-ms-input-placeholder {
+      color: #ff511d; }
+    .formSend__input::placeholder {
+      color: #ff511d; }
+    .formSend__button {
+      width: 400px;
+      height: 60px;
+      margin-top: 50px;
+      background-color: transparent;
+      font-family: RoadRadio-Bold, sans-serif;
+      font-size: 24px;
+      color: #ff511d;
+      border: 2px solid #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .formSend__button:hover {
+      color: #000;
+      background-color: #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+  .contacts {
+    width: 100%;
+    padding: 1px 1px 20px; }
+    .contacts__title {
+      color: #1e1e1e;
+      margin-top: 50px; }
+  .contactsContainer {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 10px; }
+  .containerInner {
+    width: 30%; }
+    .containerInner__icon {
+      color: #ff511d;
+      text-align: center; }
+    .containerInner__title {
+      font-family: BebasNeueRegular, sans-serif;
+      color: #1e1e1e;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 26px; }
+    .containerInner__text {
+      font-family: BebasNeueRegular, sans-serif;
+      color: #1e1e1e;
+      text-align: center;
+      font-size: 22px; }
+  .footer {
+    width: 100%;
+    background-color: #222222; }
+  .footerContainer {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 50px 0; }
+  .footerLogo__title {
+    font-family: BebasNeueBold, sans-serif;
+    font-size: 50px;
+    line-height: 38px;
+    display: block; }
+    .footerLogo__title_colorFirst {
+      color: #ffffff; }
+    .footerLogo__title_colorSecond {
+      color: #7a7a7a; }
+    .footerLogo__title_colorThird {
+      color: #ff511d; }
+    .footerLogo__title_colorFourth {
+      color: #ffffff; }
+  .footerNav__links {
+    text-decoration: none;
+    display: block;
+    font-family: BebasNeueRegular, sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .footerNav__links:hover {
+    color: #ff511d;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .footerNav__links:active {
+    color: #ffffff; }
+  .footerContacts__numbers {
+    font-family: BebasNeueRegular, sans-serif;
+    color: #ffffff;
+    font-size: 32px; }
+  .footerContacts__instaButton {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ffffff;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 7px;
+    font-family: BebasNeueRegular, sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .footerContacts__instaButton:hover {
+    background-color: #ff511d;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  #scroller {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+    background-color: #e7e7e7;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    text-align: center;
+    color: #000;
+    -webkit-box-shadow: 0 2px 5px #1e1e1e;
+            box-shadow: 0 2px 5px #1e1e1e; } }
+
+@media (max-width: 599px) {
+  .bgVideo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: rgba(21, 21, 21, 0.65) url("../img/video-layer.jpg");
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-background-size: cover;
+    background-size: cover; } }
+  @media (max-width: 599px) and (min-width: 1px) and (max-width: 400px) {
+    .video {
+      display: none; } }
+
+@media (max-width: 599px) {
+  .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5px; }
+    .container__button {
+      display: none;
+      width: 20%;
+      margin-right: 5px; }
+  .header {
+    width: 100%;
+    min-height: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1); }
+  .logo {
+    width: 100%;
+    padding-left: 5px;
+    text-align: center; }
+    .logo__title {
+      font-family: BebasNeueBold, sans-serif;
+      font-size: 52px;
+      color: #ff511d;
+      letter-spacing: 3px; }
+    .logo__subtitle {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 17px;
+      color: rgba(255, 255, 255, 0.8); }
+  .nav {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px; }
+    .nav__links {
+      text-decoration: none;
+      font-family: BebasNeueRegular, sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 20px;
+      display: inline-block;
+      padding-top: 24px;
+      margin-right: 15px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .nav__links:nth-child(2) {
+      color: #ff511d; }
+    .nav__links:hover {
+      color: #ff511d; }
+    .nav__links:active {
+      color: #ffffff; }
+  .button {
+    display: block;
+    background-color: #ff511d;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-family: RoadRadio-Bold, sans-serif;
+    letter-spacing: 2px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-transform: lowercase;
+    width: 150px;
+    height: 25px;
+    padding-top: 5px;
+    font-size: .9em;
+    overflow: hidden; }
+    .button__header {
+      position: relative;
+      top: 20px;
+      left: 0;
+      width: 180px;
+      height: 30px;
+      padding-top: 8px; }
+  .button:hover {
+    color: #000;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .button:active {
+    background-color: #ffffff; }
+  .title {
+    font-family: BebasNeueRegular, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 48px;
+    text-align: center;
+    padding: 5px; }
+    .title__bgVideo {
+      font-size: 36px;
+      margin: 200px 0 20px; }
+  .subtitle {
+    font-family: BebasNeueRegular, sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    line-height: 25px;
+    padding: 5px; }
+  .subtitleCenter {
+    font-family: RoadRadio-Light, sans-serif;
+    text-align: center;
+    color: #ff511d;
+    font-size: 4vw;
+    padding: 10px 5px 30px; }
+  .for-phone-only-fix {
+    font-size: 2.9vw; }
+  .button-lg {
+    display: block;
+    background-color: #ff511d;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-family: RoadRadio-Bold, sans-serif;
+    letter-spacing: 2px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-transform: lowercase;
+    width: 200px;
+    height: 50px;
+    font-size: 1.4em;
+    padding-top: 14px; }
+    .button-lg__bgVideo {
+      margin: 50px auto; }
+  .button-lg:hover {
+    color: #000; }
+  .button-lg:active {
+    background-color: #ffffff; }
+  .infoContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; }
+  .info {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-bottom: 70px; }
+    .info__title {
+      color: #1e1e1e;
+      padding-top: 50px; }
+  .infoLeftBlock {
+    width: 100%;
+    padding: 0 20px; }
+    .infoLeftBlock__title {
+      font-family: BebasNeueBold, sans-serif;
+      font-size: 26px;
+      color: #1e1e1e;
+      text-align: left;
+      line-height: 30px;
+      border-left: 3px solid #ff511d;
+      padding-left: 10px; }
+    .infoLeftBlock__paragraph {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 20px;
+      color: #a0a0a0;
+      padding-top: 10px;
+      line-height: 30px;
+      border-left: 3px solid #ff511d;
+      padding-left: 10px; }
+    .infoLeftBlock__instaButton {
+      display: block;
+      width: 200px;
+      height: 32px;
+      border: 1px solid #f2f2f2;
+      text-decoration: none;
+      color: #000;
+      padding: 7px 0 0 20px;
+      font-family: RoadRadio-Light, sans-serif;
+      position: relative;
+      top: 30px;
+      -webkit-box-shadow: 0 5px 10px #acacac;
+              box-shadow: 0 5px 10px #acacac;
+      background-color: #ffffff;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      letter-spacing: 1px; }
+    .infoLeftBlock__instaButton::after {
+      display: block;
+      content: '';
+      width: 28px;
+      height: 28px;
+      background-image: url("../img/insta-button.jpg");
+      position: absolute;
+      top: 1px;
+      right: 10px; }
+    .infoLeftBlock__instaButton:hover {
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      color: #ff511d; }
+  .infoRightBlock {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 50px; }
+  .bg-wrap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+    background: url("../img/test.png") no-repeat; }
+  .services {
+    width: 100%;
+    -webkit-box-shadow: 0 0 10px #7a7a7a;
+            box-shadow: 0 0 10px #7a7a7a; }
+    .services__title {
+      color: #1e1e1e;
+      padding-top: 50px; }
+  .servicesContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 20px 5px 40px; }
+  .serviceBlock {
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0 5px 10px #acacac;
+            box-shadow: 0 5px 10px #acacac;
+    margin-bottom: 20px; }
+    .serviceBlock_hover:hover .serviceBlock__button_hover {
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      left: 85px;
+      z-index: 1; }
+    .serviceBlock__img {
+      width: 100%;
+      height: 200px;
+      -webkit-background-size: cover;
+              background-size: cover;
+      position: relative;
+      overflow: hidden; }
+      .serviceBlock__img_personalTraining {
+        background-image: url("../img/services/personal-training.jpg"); }
+      .serviceBlock__img_groupTraining {
+        background-image: url("../img/services/group-training.jpg"); }
+      .serviceBlock__img_kidsTraining {
+        background-image: url("../img/services/kids-boxing.jpg"); }
+    .serviceBlock__serviceName {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 24px;
+      color: #1e1e1e;
+      text-align: center;
+      padding: 5px;
+      background-color: rgba(255, 255, 255, 0.5); }
+  .shadowHover {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    padding: 1px; }
+    .shadowHover__button {
+      margin: 150px auto; }
+  .timetable {
+    width: 100%;
+    height: 950px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .timetable__leftSide {
+      width: 25%;
+      background-color: #e7e7e7;
+      z-index: -1; }
+    .timetable__middleSide {
+      width: 40%;
+      background-color: rgba(242, 242, 242, 0.43);
+      position: relative;
+      z-index: -1; }
+    .timetable__rightSide {
+      width: 35%; }
+  .timetableContainer {
+    position: relative;
+    top: 100px;
+    left: -200px;
+    width: 310px;
+    height: 800px;
+    background-image: url("../img/timetable-bg1.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    -webkit-box-shadow: 0 20px 60px 1px #9c9c9c;
+            box-shadow: 0 20px 60px 1px #9c9c9c; }
+    .timetableContainer__title {
+      color: #1e1e1e;
+      padding-top: 20px; }
+    .timetableContainer__personal-training {
+      padding-top: 20px;
+      text-align: center;
+      color: #ff511d;
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 20px; }
+  .sportSections {
+    width: 100%;
+    padding: 0 70px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .sportSection {
+    width: 100%;
+    border: 1px solid #adadad;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background-color: #eeeeee; }
+    .sportSection__img {
+      display: block;
+      width: 90px;
+      margin: 5px auto; }
+    .sportSection__link {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      font-family: BebasNeueRegular, sans-serif;
+      color: #ff511d;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 5px;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s; }
+  .sportSection_focusFirst {
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black;
+    text-shadow: 0 0 5px #ff511d;
+    z-index: 1; }
+  .sportSection_focusFirst:hover, .sportSection_focusSecond:hover, .sportSection_focusThird:hover, .sportSection_focusFourth:hover {
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black;
+    z-index: 1;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .sportSection_focusFirst:hover .sportSection__link, .sportSection_focusSecond:hover .sportSection__link, .sportSection_focusThird:hover .sportSection__link, .sportSection_focusFourth:hover .sportSection__link {
+    text-shadow: 0 0 5px #ff511d;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .timetableNewPage {
+    width: 100%;
+    height: 100%;
+    background-color: #222; }
+    .timetableNewPage-black {
+      color: #dfdfdf;
+      padding-top: 170px; }
+  .timetableSection {
+    background-image: url("../img/timetable-bg1.png");
+    width: 95%;
+    height: 500px;
+    margin: 50px auto 100px;
+    padding: 50px;
+    -webkit-box-shadow: 0 20px 60px 1px #6e6d6d;
+            box-shadow: 0 20px 60px 1px #6e6d6d;
+    position: relative; }
+    .timetableSection__days {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 32px;
+      color: #ff511d;
+      text-align: center;
+      padding: 10px; }
+    .timetableSection__times {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 28px;
+      color: #000;
+      text-align: center; }
+    .timetableSection__links {
+      color: #222;
+      font-size: 22px;
+      font-family: BebasNeueRegular, sans-serif; }
+      .timetableSection__links-pdf {
+        position: absolute;
+        left: 20px;
+        bottom: 20px; }
+      .timetableSection__links-excel {
+        position: absolute;
+        right: 20px;
+        bottom: 20px; }
+    .timetableSection__links:hover {
+      color: #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+  .timetableSubtitle {
+    text-align: center;
+    color: #000;
+    font-family: BebasNeueRegular, sans-serif;
+    font-size: 52px;
+    margin-bottom: 50px; }
+    .timetableSubtitle-comment {
+      font-size: 36px;
+      margin-top: -30px; }
+  .coaches {
+    width: 100%;
+    -webkit-box-shadow: 0 -1px 10px #7a7a7a;
+            box-shadow: 0 -1px 10px #7a7a7a;
+    padding-bottom: 50px; }
+    .coaches__title {
+      color: #1e1e1e;
+      padding-top: 50px; }
+  .coachesContainer {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 5px; }
+  .coachesBox__photo {
+    width: 250px;
+    height: 250px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin: 0 auto;
+    border: 3px solid #a0a0a0; }
+  .coachesBox__name {
+    font-family: RoadRadio-Bold, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: center;
+    background-color: #ff511d;
+    -webkit-box-shadow: 0 0 5px #ff511d;
+            box-shadow: 0 0 5px #ff511d;
+    padding: 4px; }
+  .coachesBox__info {
+    font-family: BebasNeueRegular, sans-serif;
+    font-size: 24px;
+    color: #7a7a7a;
+    line-height: 30px;
+    text-align: center;
+    padding: 5px;
+    min-height: 70px;
+    overflow: hidden; }
+  .vladimir {
+    background: url(../img/coaches/Vladimir.jpg) 25px -20px;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .nastya {
+    background: url(../img/coaches/Nastya.jpg)-10px 0;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .alexandr {
+    background: url(../img/coaches/Alexandr.jpg);
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .denis {
+    background: url(../img/coaches/Denis.jpg) 0 -20px;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .sergei {
+    background: url(../img/coaches/sergei.jpg);
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .form {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/form-bg1.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    padding: 1px; }
+  .formContainer {
+    width: 100%;
+    margin: 20px auto 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .formLeftSide {
+    width: 100%;
+    margin-top: 20px; }
+    .formLeftSide__title {
+      font-family: BebasNeueBold, sans-serif;
+      color: #ff511d;
+      font-size: 42px;
+      margin-top: 15px;
+      text-align: center;
+      padding: 5px; }
+    .formLeftSide__paragraph {
+      display: none; }
+  .formRightSide {
+    width: 100%; }
+  .formSend {
+    width: 300px;
+    margin: 20px auto; }
+    .formSend__input {
+      border: none;
+      border-bottom: 2px solid #ff511d;
+      background-color: transparent;
+      width: 300px;
+      height: 60px;
+      margin-top: 10px;
+      color: #ff511d;
+      font-family: BebasNeueBold, sans-serif;
+      font-size: 28px;
+      outline: none;
+      padding-left: 5px; }
+    .formSend__input::-webkit-input-placeholder {
+      color: #ff511d; }
+    .formSend__input::-moz-placeholder {
+      color: #ff511d; }
+    .formSend__input:-ms-input-placeholder {
+      color: #ff511d; }
+    .formSend__input::-ms-input-placeholder {
+      color: #ff511d; }
+    .formSend__input::placeholder {
+      color: #ff511d; }
+    .formSend__button {
+      width: 300px;
+      height: 60px;
+      margin-top: 50px;
+      background-color: transparent;
+      font-family: RoadRadio-Bold, sans-serif;
+      font-size: 24px;
+      color: #ff511d;
+      border: 2px solid #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .formSend__button:hover {
+      color: #000;
+      background-color: #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+  .contacts {
+    width: 100%;
+    padding: 1px; }
+    .contacts__title {
+      color: #1e1e1e;
+      margin-top: 50px; }
+  .contactsContainer {
+    width: 100%;
+    min-height: 200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 10px; }
+  .containerInner {
+    width: 100%;
+    padding-bottom: 20px; }
+    .containerInner__icon {
+      color: #ff511d;
+      text-align: center; }
+    .containerInner__title {
+      font-family: BebasNeueRegular, sans-serif;
+      color: #1e1e1e;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 26px; }
+    .containerInner__text {
+      font-family: BebasNeueRegular, sans-serif;
+      color: #1e1e1e;
+      text-align: center;
+      font-size: 20px; }
+  .footer {
+    width: 100%;
+    background-color: #222222; }
+  .footerContainer {
+    width: 200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 50px 0; }
+  .footerLogo {
+    width: 100%;
+    margin: 0 0 20px 10px; }
+    .footerLogo__title {
+      font-family: BebasNeueBold, sans-serif;
+      font-size: 50px;
+      line-height: 38px;
+      display: block; }
+      .footerLogo__title_colorFirst {
+        color: #ffffff; }
+      .footerLogo__title_colorSecond {
+        color: #7a7a7a; }
+      .footerLogo__title_colorThird {
+        color: #ff511d; }
+      .footerLogo__title_colorFourth {
+        color: #ffffff; }
+  .footerNav {
+    margin: 0 0 20px 10px; }
+    .footerNav__links {
+      text-decoration: none;
+      display: block;
+      font-family: BebasNeueRegular, sans-serif;
+      color: #ffffff;
+      font-size: 30px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .footerNav__links:hover {
+      color: #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .footerNav__links:active {
+      color: #ffffff; }
+  .footerContacts {
+    margin: 0 0 20px 10px; }
+    .footerContacts__numbers {
+      font-family: BebasNeueRegular, sans-serif;
+      color: #ffffff;
+      font-size: 32px; }
+    .footerContacts__instaButton {
+      display: block;
+      width: 100%;
+      height: 40px;
+      border: 1px solid #ffffff;
+      margin-top: 15px;
+      text-align: center;
+      padding-top: 7px;
+      font-family: BebasNeueRegular, sans-serif;
+      color: #ffffff;
+      font-size: 24px;
+      text-decoration: none;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .footerContacts__instaButton:hover {
+      background-color: #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+  #scroller {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+    background-color: rgba(197, 183, 214, 0.3);
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    text-align: center;
+    color: #000;
+    -webkit-box-shadow: 0 2px 5px #1e1e1e;
+            box-shadow: 0 2px 5px #1e1e1e; } }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  overflow-x: hidden !important; }
+
+body {
+  overflow-x: hidden !important; }
+
+iframe {
+  width: 100%;
+  border: none; }
+
+@media (min-width: 1300px) {
+  .bgVideo {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(21, 21, 21, 0.65);
+    position: relative;
+    overflow: hidden; }
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-background-size: cover;
+    background-size: cover; }
+  .header {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1); }
+  .logo__title {
+    font-family: BebasNeueBold, sans-serif;
+    font-size: 52px;
+    color: #ff511d;
+    letter-spacing: 3px; }
+  .logo__subtitle {
+    font-family: BebasNeueRegular, sans-serif;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.8); }
+  .nav {
+    margin-left: 12%; }
+    .nav__links {
+      text-decoration: none;
+      font-family: BebasNeueRegular, sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 24px;
+      display: inline-block;
+      padding-top: 24px;
+      margin-right: 25px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .nav__links:hover {
+      color: #ff511d; }
+    .nav__links:active {
+      color: #ffffff; }
+  .button {
+    display: block;
+    background-color: #ff511d;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-family: RoadRadio-Bold, sans-serif;
+    letter-spacing: 2px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-transform: lowercase;
+    width: 150px;
+    height: 25px;
+    padding-top: 5px;
+    font-size: .9em;
+    overflow: hidden; }
+    .button__header {
+      position: relative;
+      top: 20px;
+      left: 150px;
+      width: 180px;
+      height: 30px;
+      padding-top: 8px; }
+  .button:hover {
+    color: #000;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .button:active {
+    background-color: #ffffff; }
+  .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 5px;
+    position: relative; }
+  .title {
+    font-family: BebasNeueRegular, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 72px;
+    text-align: center; }
+    .title__bgVideo {
+      margin-top: 15%;
+      margin-bottom: 50px; }
+  .subtitle {
+    font-family: BebasNeueRegular, sans-serif;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    line-height: 30px;
+    width: 60%;
+    margin: 0 auto; }
+  .subtitleCenter {
+    font-family: RoadRadio-Light, sans-serif;
+    text-align: center;
+    color: #ff511d;
+    font-size: 24px;
+    padding: 10px 0 30px; }
+  .button-lg {
+    display: block;
+    background-color: #ff511d;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-family: RoadRadio-Bold, sans-serif;
+    letter-spacing: 2px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-transform: lowercase;
+    width: 200px;
+    height: 50px;
+    font-size: 1.4em;
+    padding-top: 14px; }
+    .button-lg__bgVideo {
+      margin: 50px auto; }
+  .button-lg:hover {
+    color: #000; }
+  .button-lg:active {
+    background-color: #ffffff; }
+  .infoContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding: 0 100px; }
+  .info {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-bottom: 70px; }
+    .info__title {
+      color: #1e1e1e;
+      padding-top: 50px; }
+  .infoLeftBlock {
+    padding: 0 20px; }
+    .infoLeftBlock__title {
+      font-family: BebasNeueBold, sans-serif;
+      font-size: 28px;
+      color: #1e1e1e;
+      text-align: left;
+      line-height: 30px;
+      border-left: 3px solid #ff511d;
+      padding-left: 10px; }
+    .infoLeftBlock__paragraph {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 22px;
+      color: #a0a0a0;
+      padding-top: 10px;
+      line-height: 30px;
+      border-left: 3px solid #ff511d;
+      padding-left: 10px; }
+    .infoLeftBlock__instaButton {
+      display: block;
+      width: 200px;
+      height: 32px;
+      border: 1px solid #f2f2f2;
+      text-decoration: none;
+      color: #000;
+      padding: 7px 0 0 20px;
+      font-family: RoadRadio-Light, sans-serif;
+      position: relative;
+      top: 20px;
+      -webkit-box-shadow: 0 5px 10px #acacac;
+              box-shadow: 0 5px 10px #acacac;
+      background-color: #ffffff;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      letter-spacing: 1px; }
+    .infoLeftBlock__instaButton::after {
+      display: block;
+      content: '';
+      width: 28px;
+      height: 28px;
+      background-image: url("../img/insta-button.jpg");
+      position: absolute;
+      top: 1px;
+      right: 10px; }
+    .infoLeftBlock__instaButton:hover {
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      color: #ff511d; }
+  .infoRightBlock {
+    width: 100%;
+    height: auto; }
+  .bg-wrap {
+    width: 1300px;
+    margin: 0 auto;
+    background: url("../img/test.png") no-repeat; }
+  .services {
+    width: 100%;
+    -webkit-box-shadow: 0 0 10px #7a7a7a;
+            box-shadow: 0 0 10px #7a7a7a; }
+    .services__title {
+      color: #1e1e1e;
+      padding-top: 50px; }
+  .servicesContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding: 20px 100px 120px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .serviceBlock {
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0 5px 10px #acacac;
+            box-shadow: 0 5px 10px #acacac; }
+    .serviceBlock_hover:hover .serviceBlock__button_hover {
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      left: 85px;
+      z-index: 1; }
+    .serviceBlock__img {
+      width: 300px;
+      height: 200px;
+      -webkit-background-size: cover;
+              background-size: cover;
+      position: relative;
+      overflow: hidden; }
+      .serviceBlock__img_personalTraining {
+        background-image: url("../img/services/personal-training.jpg"); }
+      .serviceBlock__img_groupTraining {
+        background-image: url("../img/services/group-training.jpg"); }
+      .serviceBlock__img_kidsTraining {
+        background-image: url("../img/services/kids-boxing.jpg"); }
+    .serviceBlock__serviceName {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 24px;
+      color: #1e1e1e;
+      text-align: center;
+      padding: 5px;
+      background-color: rgba(255, 255, 255, 0.5); }
+  .shadowHover {
+    width: 100%;
+    height: 200px;
+    margin-top: -200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    padding: 1px; }
+    .shadowHover__button {
+      margin: 150px auto; }
+  .serviceBlock__img_personalTraining:hover .shadowHover {
+    margin-top: 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .serviceBlock__img_groupTraining:hover .shadowHover {
+    margin-top: 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .serviceBlock__img_kidsTraining:hover .shadowHover {
+    margin-top: 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .timetable {
+    width: 100%;
+    height: 700px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .timetable__leftSide {
+      width: 25%;
+      background-color: #e7e7e7;
+      z-index: -1; }
+    .timetable__middleSide {
+      width: 40%;
+      background-color: rgba(242, 242, 242, 0.43);
+      position: relative;
+      z-index: -1; }
+    .timetable__rightSide {
+      width: 35%; }
+  .timetableContainer {
+    position: relative;
+    top: 100px;
+    left: -750px;
+    width: 1000px;
+    height: 500px;
+    background-image: url("../img/timetable-bg1.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    -webkit-box-shadow: 0 20px 60px 1px #9c9c9c;
+            box-shadow: 0 20px 60px 1px #9c9c9c; }
+    .timetableContainer__title {
+      color: #1e1e1e;
+      padding-top: 20px; }
+    .timetableContainer__personal-training {
+      padding-top: 20px;
+      text-align: center;
+      color: #ff511d;
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 20px; }
+  .sportSections {
+    width: 100%;
+    padding: 20px 70px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .sportSection {
+    width: 27%;
+    border: 1px solid #adadad;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background-color: #eeeeee; }
+    .sportSection__img {
+      display: block;
+      width: 90px;
+      margin: 20px auto; }
+    .sportSection__link {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      font-family: BebasNeueRegular, sans-serif;
+      color: #ff511d;
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 40px;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s; }
+  .sportSection_focusFirst:hover, .sportSection_focusSecond:hover, .sportSection_focusThird:hover, .sportSection_focusFourth:hover {
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black;
+    z-index: 1;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .sportSection_focusFirst:hover .sportSection__link, .sportSection_focusSecond:hover .sportSection__link, .sportSection_focusThird:hover .sportSection__link, .sportSection_focusFourth:hover .sportSection__link {
+    text-shadow: 0 0 5px #ff511d;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  .timetableNewPage {
+    width: 100%;
+    height: 100%;
+    background-color: #222; }
+    .timetableNewPage-black {
+      color: #dfdfdf;
+      padding-top: 100px; }
+  .timetableSection {
+    background-image: url("../img/timetable-bg1.png");
+    width: 1000px;
+    height: 500px;
+    margin: 50px auto 100px;
+    padding: 50px;
+    -webkit-box-shadow: 0 20px 60px 1px #6e6d6d;
+            box-shadow: 0 20px 60px 1px #6e6d6d;
+    position: relative; }
+    .timetableSection__days {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 32px;
+      color: #ff511d;
+      text-align: center;
+      padding: 10px; }
+    .timetableSection__times {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 28px;
+      color: #000;
+      text-align: center; }
+    .timetableSection__links {
+      color: #222;
+      font-size: 22px;
+      font-family: BebasNeueRegular, sans-serif;
+      outline: none; }
+      .timetableSection__links-pdf {
+        position: absolute;
+        left: 20px;
+        bottom: 20px; }
+      .timetableSection__links-excel {
+        position: absolute;
+        right: 20px;
+        bottom: 20px; }
+    .timetableSection__links:hover {
+      color: #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+  .timetableSubtitle {
+    text-align: center;
+    color: #000;
+    font-family: BebasNeueRegular, sans-serif;
+    font-size: 52px;
+    margin-bottom: 50px; }
+    .timetableSubtitle-comment {
+      font-size: 36px;
+      margin-top: -30px; }
+  .coaches {
+    width: 100%;
+    -webkit-box-shadow: 0 -1px 10px #7a7a7a;
+            box-shadow: 0 -1px 10px #7a7a7a;
+    padding-bottom: 50px; }
+    .coaches__title {
+      color: #1e1e1e;
+      padding-top: 50px; }
+  .coachesContainer {
+    width: 1300px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 100px; }
+  .coachesBox {
+    width: 33.33%; }
+    .coachesBox__photo {
+      width: 250px;
+      height: 250px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      margin: 0 auto;
+      border: 3px solid #a0a0a0; }
+    .coachesBox__name {
+      font-family: RoadRadio-Bold, sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 24px;
+      margin: 20px 0;
+      text-align: center;
+      background-color: #ff511d;
+      -webkit-box-shadow: 0 0 5px #ff511d;
+              box-shadow: 0 0 5px #ff511d;
+      padding: 4px; }
+    .coachesBox__info {
+      font-family: BebasNeueRegular, sans-serif;
+      font-size: 24px;
+      color: #7a7a7a;
+      line-height: 30px;
+      text-align: center;
+      padding: 5px;
+      min-height: 70px;
+      overflow: hidden; }
+  .vladimir {
+    background: url(../img/coaches/Vladimir.jpg) 25px -20px;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .nastya {
+    background: url(../img/coaches/Nastya.jpg)-10px 0;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .alexandr {
+    background: url(../img/coaches/Alexandr.jpg);
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .denis {
+    background: url(../img/coaches/Denis.jpg) 0 -20px;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .sergei {
+    background: url(../img/coaches/sergei.jpg);
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .form {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/form-bg.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    padding: 1px; }
+  .formContainer {
+    width: 1300px;
+    margin: 180px auto 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .formLeftSide {
+    width: 60%; }
+    .formLeftSide__title {
+      font-family: BebasNeueBold, sans-serif;
+      color: #ff511d;
+      font-size: 52px;
+      margin-top: 215px;
+      text-align: right;
+      padding: 5px; }
+    .formLeftSide__paragraph {
+      font-family: BebasNeueBold, sans-serif;
+      color: #ff511d;
+      font-size: 28px;
+      margin-top: 50px;
+      line-height: 35px;
+      text-align: right;
+      font-style: italic; }
+  .formRightSide {
+    width: 40%; }
+  .formSend {
+    margin: 195px 0 0 100px; }
+    .formSend__input {
+      border: none;
+      border-bottom: 2px solid #ff511d;
+      background-color: transparent;
+      width: 400px;
+      height: 60px;
+      margin-top: 10px;
+      color: #ff511d;
+      font-family: BebasNeueBold, sans-serif;
+      font-size: 28px;
+      outline: none; }
+    .formSend__input::-webkit-input-placeholder {
+      color: #ff511d; }
+    .formSend__input::-moz-placeholder {
+      color: #ff511d; }
+    .formSend__input:-ms-input-placeholder {
+      color: #ff511d; }
+    .formSend__input::-ms-input-placeholder {
+      color: #ff511d; }
+    .formSend__input::placeholder {
+      color: #ff511d; }
+    .formSend__button {
+      width: 400px;
+      height: 60px;
+      margin-top: 50px;
+      background-color: transparent;
+      font-family: RoadRadio-Bold, sans-serif;
+      font-size: 24px;
+      color: #ff511d;
+      border: 2px solid #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .formSend__button:hover {
+      color: #000;
+      background-color: #ff511d;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+  .contacts {
+    width: 100%;
+    padding: 1px 1px 20px; }
+    .contacts__title {
+      color: #1e1e1e;
+      margin-top: 50px; }
+  .contactsContainer {
+    width: 1300px;
+    height: 200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 100px; }
+  .containerInner {
+    width: 300px; }
+    .containerInner__icon {
+      color: #ff511d;
+      position: relative;
+      left: 42%; }
+      .containerInner__icon_right {
+        margin-left: 7px; }
+    .containerInner__title {
+      font-family: BebasNeueRegular, sans-serif;
+      color: #1e1e1e;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 32px; }
+    .containerInner__text {
+      font-family: BebasNeueRegular, sans-serif;
+      color: #1e1e1e;
+      text-align: center;
+      font-size: 30px; }
+  .footer {
+    width: 100%;
+    background-color: #222222; }
+  .footerContainer {
+    width: 1300px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 50px 0; }
+  .footerLogo__title {
+    font-family: BebasNeueBold, sans-serif;
+    font-size: 50px;
+    line-height: 38px;
+    display: block; }
+    .footerLogo__title_colorFirst {
+      color: #ffffff; }
+    .footerLogo__title_colorSecond {
+      color: #7a7a7a; }
+    .footerLogo__title_colorThird {
+      color: #ff511d; }
+    .footerLogo__title_colorFourth {
+      color: #ffffff; }
+  .footerNav__links {
+    text-decoration: none;
+    display: block;
+    font-family: BebasNeueRegular, sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .footerNav__links:hover {
+    color: #ff511d;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .footerNav__links:active {
+    color: #ffffff; }
+  .footerContacts__numbers {
+    font-family: BebasNeueRegular, sans-serif;
+    color: #ffffff;
+    font-size: 32px; }
+  .footerContacts__instaButton {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ffffff;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 7px;
+    font-family: BebasNeueRegular, sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .footerContacts__instaButton:hover {
+    background-color: #ff511d;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  #scroller {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+    background-color: #e7e7e7;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    text-align: center;
+    color: #000;
+    -webkit-box-shadow: 0 2px 5px #1e1e1e;
+            box-shadow: 0 2px 5px #1e1e1e; } }

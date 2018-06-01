@@ -1,0 +1,17 @@
+@mixin button{
+  display:block;
+  background-color:$mainColor;
+  text-decoration:none;
+  color:$textColor;
+  text-align:center;
+  font-family:$roadBold;
+  letter-spacing:2px;
+  transition:.3s;
+  text-transform: lowercase;
+}
+@mixin container{
+  display:flex;
+  width:1300px;
+  margin:0 auto;
+  padding-top:5px;
+}
